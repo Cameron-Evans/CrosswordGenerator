@@ -43,10 +43,7 @@ const Header = () => {
                 About
               </Link>
             </a>
-            <a className="nav__link" href="#pricing">
-              Stats
-            </a>
-
+            
             <a className="nav__link">
               <Link className="nav__link" to={"/share"}>
                 Share
@@ -62,9 +59,6 @@ const Header = () => {
               Support
             </a>
 
-            <a className="nav__link" href="#contact">
-              Generated Crossword
-            </a>
             <a className="btn-green" href="#contact">
             {!localStorage.getItem("authToken") ? (
                 <Link className="nav__link" to={"/login"}>
