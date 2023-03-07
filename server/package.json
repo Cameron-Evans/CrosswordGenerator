@@ -1,9 +1,15 @@
 {
   "dependencies": {
+    "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.10.0",
     "node-fetch": "^2.6.9",
     "pm2": "^5.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run startFasttext\" \"npm run startExpress\"",
+    "startFasttext": "cd ./python && python3 findClues.py 55936",
+    "startExpress": "node server.js"
   }
 }

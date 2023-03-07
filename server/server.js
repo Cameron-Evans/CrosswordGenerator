@@ -8,13 +8,13 @@ dotenv.config()
 const app = express()
 app.use(express.json())
 const PORT = process.env.EXPRESS_PORT;
-const FLASK_PORT = process.env.FLASK_PORT;
+const FLASK_PORT = 55936;
 const URI = process.env.DATABASE_URI;
 
-try {
-    exec(`python3 findClues.py ${FLASK_PORT}`, {cwd: './python'});
-    console.log(`Flask server booting on port: ${FLASK_PORT}`);
-} catch (err) {console.log(err);}
+// try {
+//     exec(`python3 findClues.py ${FLASK_PORT}`, {cwd: './python'});
+//     console.log(`Flask server booting on port: ${FLASK_PORT}`);
+// } catch (err) {console.log(err);}
 
 try {
     mongoose.connect(URI);
