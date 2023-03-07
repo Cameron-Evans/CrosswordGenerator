@@ -15,11 +15,11 @@ const AboutPhil = () => {
             
             <h3>What is another project you've worked on that helped you here?</h3>
             <p>
-              Generic fluff answer number 1
+            In my free time I like to do game development and I have found that parts of that carry over to this project; like creating interactable components that can be reused and the general parent child structure that you build out pages with.
             </p>
             <h3>What do you hope to take away from this project?</h3>
             <p>
-              Generic fluff answer number 2:
+            I'm completely new to web design, so I went in to this project hoping to strengthen my understanding of the core design and implementation techniques for creating websites and web applications.
             </p>
             <div class="aboutMember-box-image">
                     <img

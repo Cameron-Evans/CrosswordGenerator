@@ -15,11 +15,11 @@ const AboutCameron = () => {
             
             <h3>What is another project you've worked on that helped you here?</h3>
             <p>
-              Generic fluff answer number 1
+            Another project I've worked on is my senior project, a Peer to Peer search engine called deroute! As far as we know, it's the first fully distributed peer to peer search engine out there. It also uses the fastText library so many of the same problems with CrosswordGen popped up with that project.
             </p>
             <h3>What do you hope to take away from this project?</h3>
             <p>
-              Generic fluff answer number 2:
+            I'm hoping this project gives me a nice resume piece and something neat I can show my grandma.
             </p>
             <div class="aboutMember-box-image">
                     <img
