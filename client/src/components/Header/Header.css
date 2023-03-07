@@ -107,6 +107,26 @@
     margin-right: 1rem;
 }
 
+.nav__button {
+    background: var(--color-green);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+    border-radius: 4px;
+    padding: 1.15rem 1.75rem;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .nav__button:hover {
+    background: transparent;
+    color: var(--color-green);
+    border: 2px solid var(--color-green);
+  }
+
 @media screen and (min-width: 992px) {
     .bar__nav-toggle {
         display: none;

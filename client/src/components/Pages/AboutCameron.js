@@ -24,7 +24,7 @@ const AboutCameron = () => {
             <div class="aboutMember-box-image">
                     <img
                     src={RobotImg}
-                    alt="Logo Genius Logo Design Service"
+                    alt=""
                     />
             </div>
           </div>

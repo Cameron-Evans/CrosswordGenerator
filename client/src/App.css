@@ -357,26 +357,6 @@ color: var(--color-white);
   text-align: center;
 }
 
-.about-h2-login{
-  color: var(--color-navy);
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 1.4;
-  text-transform: capitalize;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.about-h1-login{
-  color: var(--color-navy);
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.4;
-  text-transform: capitalize;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .about-box p {
   color: var(--color-medium-grey);
   font-size: 1.4rem;
@@ -389,6 +369,95 @@ color: var(--color-white);
 
 .about-button {
   margin-bottom: 2rem;
+}
+
+/* Login Page */
+.login-h2 {
+  color: var(--color-navy);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-h1 {
+  color: var(--color-navy);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.google-login-button {
+  background: var(--color-green);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: .5px;
+  border-radius: 4px;
+  padding: 1.15rem 1.75rem;
+  cursor: pointer;
+  transition: .3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.google-login-button:hover {
+  background: transparent;
+  color: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+
+/* Puzzle Page */
+.puzzle {
+  padding: 16rem 8rem 10rem 8rem;
+}
+
+.puzzle-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.puzzle-box h2 {
+  color: var(--color-navy);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.puzzle-size-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.puzzle-header h2 {
+  color: var(--color-navy);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.puzzle-crossword-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 5px solid #34d596;
+}
+
+.puzzle-btn {
+  margin: 0 10px;
 }
 
 /* Member Section  */

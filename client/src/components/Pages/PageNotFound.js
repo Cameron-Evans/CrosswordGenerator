@@ -6,7 +6,7 @@ const PageNotFound = () => (
     <div class="PageNotFound">
         <div class="PageNotFound-scene">
             <div class="services-card-image">
-                <img src={RobotImg} alt="Logo Genius Logo Design Service" />
+                <img src={RobotImg} alt="" />
             </div>
             <div class="PageNotFound-text">404</div>
             <div class="PageNotFound-text">Page Not Found!</div>

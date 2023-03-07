@@ -73,7 +73,7 @@ const About = () => {
           <div class="services-box">
             <div class="services-card">
               <div class="services-card-image">
-                <img src={RobotImg} alt="Logo Genius Logo Design Service" />
+                <img src={RobotImg} alt="" />
               </div>
               <div class="services-info">
                 <h3>01. Research</h3>
@@ -88,7 +88,7 @@ const About = () => {
 
             <div class="services-card">
               <div class="services-card-image">
-                <img src={RobotImg} alt="Logo Genius Logo Design Service" />
+                <img src={RobotImg} alt="" />
               </div>
               <div class="services-info">
                 <h3>02. Design</h3>
@@ -105,7 +105,7 @@ const About = () => {
               <div class="services-card-image">
                 <img
                   src={RobotImg}
-                  alt="Logo Genius Logo Design Service"
+                  alt=""
                 />
               </div>
               <div class="services-info">
@@ -121,7 +121,7 @@ const About = () => {
 
             <div class="services-card">
               <div class="services-card-image">
-                <img src={RobotImg} alt="Logo Genius Logo Design Service" />
+                <img src={RobotImg} alt="" />
               </div>
               <div class="services-info">
                 <h3>04. Deployment</h3>
