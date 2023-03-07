@@ -357,6 +357,26 @@ color: var(--color-white);
   text-align: center;
 }
 
+.about-h2-login{
+  color: var(--color-navy);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-h1-login{
+  color: var(--color-navy);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .about-box p {
   color: var(--color-medium-grey);
   font-size: 1.4rem;

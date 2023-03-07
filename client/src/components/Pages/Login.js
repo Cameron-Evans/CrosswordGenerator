@@ -64,8 +64,8 @@ function Login(props) {
             <section className="login">
                 <div className="container">
                     <div className="about-box">
-                        <h2>Login to your Account</h2>
-                        <h1>Login to your Account</h1>
+                        <h2 className="about-h2-login">Login to your Account</h2>
+                        <h1 className="about-h1-login">Login to your Account</h1>
                         <button onClick={() => login()}>Login with Google</button>
                     </div>
                 </div>
