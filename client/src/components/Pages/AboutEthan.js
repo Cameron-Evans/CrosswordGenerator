@@ -15,11 +15,11 @@ const AboutEthan = () => {
             
             <h3>What is another project you've worked on that helped you here?</h3>
             <p>
-              Generic fluff answer number 1
+              Besides basic web design, I've never used React before so this is my first experience with non-static web apps.
             </p>
             <h3>What do you hope to take away from this project?</h3>
             <p>
-              Generic fluff answer number 2:
+              A nice resume item and a game to play when I'm bored.
             </p>
             <div class="aboutMember-box-image">
                     <img
