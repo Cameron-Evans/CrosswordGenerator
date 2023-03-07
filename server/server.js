@@ -43,6 +43,12 @@ const userSchema = new mongoose.Schema({
 
 const User = new mongoose.model("User", userSchema);
 
+app.use(function(req, res, next){
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
+
+
 app.post('/api/signin', function (req, res) {
     const {googleID} = req.body;
     if (!googleID) {

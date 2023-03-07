@@ -1,7 +1,26 @@
 import React from "react";
 import robotImg from "../../assets/img/robot.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+  event.preventDefault()
+  const keyword = event.target.keyword.value
+  fetch(`http://localhost:52093/GenCrossword/${keyword}`)
+    .then(res => res.json())
+    .then(array => 
+      navigate('/puzzle', {
+        state: {
+          query: keyword,
+          results: array,
+        }
+      })
+    )
+  }
+
   return (
     <>
       <header className="header" id="header">
@@ -15,12 +34,12 @@ const Home = () => {
               </h4>
             </div>
             <div className="header-form">
-              <form name="header" method="POST" data-netlify="true">
+              <form onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="header" />
                 <div className="header-item">
                   <input
-                    type="email"
-                    name="Email Address"
+                    type="text"
+                    name="keyword"
                     id=""
                     className="input"
                     placeholder="Enter a keyword"
