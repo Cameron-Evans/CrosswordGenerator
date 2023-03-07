@@ -34,4 +34,5 @@ if __name__ == '__main__':
     with open('wordClue.pkl', 'rb') as f:
         wordClueDict = pickle.load(f)
     print('model loaded')
-    app.run(host='localhost', port=sys.argv[1])
+    from waitress import serve
+    serve(app, host='localhost', port=sys.argv[1])
