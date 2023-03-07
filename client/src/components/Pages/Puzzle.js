@@ -80,15 +80,48 @@ function Puzzle() {
       <section className="about">
         <div className="container">
           <div className="about-box">
-            <h2 style={{ textDecorationLine: 'underline' }}>{location.state.query}</h2>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
-              <h2 style={{ margin: 5 }}>Size: </h2>
+            <h2 style={{ textDecorationLine: 'underline'}}>{location.state.query}</h2>
+            
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }} className="">
+              <h2 style={{ margin: 5 }} className="puzzle-size">Size of puzzle: </h2>
               <button style={{ margin: 10 }} onClick={() => setSize(15)} className="btn-green">15</button>
               <button style={{ margin: 10 }} onClick={() => setSize(20)} className="btn-green">20</button>
               <button style={{ margin: 10 }} onClick={() => setSize(25)} className="btn-green">25</button>
             </div>
+
+            <div className="puzzle-size-box">
+              <h2 className="puzzle-size-header">Size of puzzle: </h2>
+              <button onClick={() => setSize(15)} className="btn-green">15</button>
+              <button onClick={() => setSize(20)} className="btn-green">20</button>
+              <button onClick={() => setSize(25)} className="btn-green">25</button>
+            </div>
+
+
             <CrosswordPuzzle crossword={crossword} size={CELL_SIZE} />
             <ClueList clue_list={location.state.results} clue_data={crossword.clue_data} />
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Puzzle Section  */}
+      <section className="puzzle">
+        <div className="container">
+          <div className="puzzle-box">
+            <h2 style={{ textDecorationLine: 'underline'}}>{location.state.query}</h2>
+
+            <div className="puzzle-size-button-box">
+              <h2 className="puzzle-header">Size of puzzle: </h2>
+              <button onClick={() => setSize(15)} className="btn-green puzzle-btn">15</button>
+              <button onClick={() => setSize(20)} className="btn-green puzzle-btn">20</button>
+              <button onClick={() => setSize(25)} className="btn-green puzzle-btn">25</button>
+            </div>
+
+            <div className="puzzle-crossword-box">
+            <CrosswordPuzzle crossword={crossword} size={CELL_SIZE} />
+            <ClueList clue_list={location.state.results} clue_data={crossword.clue_data} />
+            </div>
           </div>
         </div>
       </section>

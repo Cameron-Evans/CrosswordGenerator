@@ -55,7 +55,7 @@ const Header = () => {
               </Link>
             </a>
 
-            <a className="nav__link" href="#fiverr">
+            <a className="nav__link" href="#">
               Support
             </a>
 
@@ -65,7 +65,7 @@ const Header = () => {
                   Login
                 </Link>
               ) : (
-                <button onClick={logOut}>Log out</button>
+                <button onClick={logOut} className="nav__button">Log out</button>
               )}
             </a>
           </nav>
