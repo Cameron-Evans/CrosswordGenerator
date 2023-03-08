@@ -9,7 +9,7 @@ const Home = () => {
   const handleSubmit = (event) => {
   event.preventDefault()
   const keyword = event.target.keyword.value
-  fetch(`http://localhost:52093/GenCrossword/${keyword}`)
+  fetch(`http://crosswordcreate.xyz:52093/GenCrossword/${keyword}`)
     .then(res => res.json())
     .then(array => 
       navigate('/puzzle', {
