@@ -15,7 +15,7 @@ describe('Home', () => {
         const createButton = screen.getByRole("button");
 
         expect(keywordField).toBeInTheDocument();
-        expect(keywordField).toHaveAttribute("type", "email");
+        expect(keywordField).toHaveAttribute("type", "text");
 
         expect(createButton).toBeInTheDocument();
         expect(createButton).toHaveAttribute("type", "submit");
