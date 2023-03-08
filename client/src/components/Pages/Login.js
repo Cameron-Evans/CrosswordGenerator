@@ -66,7 +66,7 @@ function Login(props) {
                     <div className="about-box">
                         <h2 className="login-h2">Login to your Account</h2>
                         <h1 className="login-h1">Login to your Account</h1>
-                        <button className="google-login-button" onClick={() => login()}>Login with Google</button>
+                        <button className="btn-green" onClick={() => login()}>Login with Google</button>
                     </div>
                 </div>
             </section>

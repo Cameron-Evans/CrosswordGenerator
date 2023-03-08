@@ -943,23 +943,19 @@ input[type="password"] {
 
 /* Google Login Section */
 .login-h2 {
-  color: var(--color-navy);
+  color: var(--color-white);
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
-  text-transform: capitalize;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .login-h1 {
-  color: var(--color-navy);
+  color: var(--color-white);
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
-  text-transform: capitalize;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .google-login-button {
@@ -1011,9 +1007,20 @@ input[type="password"] {
 }
 
 .PageNotFound-text {
-  color: #252525;
-  font-size: 8em;
-  font-weight: bold;
+  color: var(--color-white);
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.services-card-image {
+  margin: auto;
+}
+
+.services-card-image img {
+  width: 150px;
+  margin-bottom: 4rem;
 }
 
 /* -------------------- FAQ Page -------------------- */
