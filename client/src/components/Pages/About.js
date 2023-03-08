@@ -63,7 +63,7 @@ const About = () => {
                 </div>
               </div>
               <h3>What is another project you've worked on that helped you here?</h3>
-              <p>Another project I've worked on is my senior project, a Peer to Peer search engine called deroute!</p>
+              <p>In my free time I like to do game development and I have found that parts of that carry over to this project.</p>
               <div className="team-button">
                 <Link className="btn-transparent" to={"/AboutPhil"}>More On Phil &#8594;</Link>
               </div>
@@ -79,7 +79,7 @@ const About = () => {
                 </div>
               </div>
               <h3>What is another project you've worked on that helped you here?</h3>
-              <p>Another project I've worked on is my senior project, a Peer to Peer search engine called deroute!</p>
+              <p>Besides basic web design,this is my first experience with non-static web apps using React.</p>
               <div className="team-button">
                 <Link className="btn-transparent" to={"/AboutEthan"}>More On Ethan &#8594;</Link>
               </div>
@@ -95,7 +95,7 @@ const About = () => {
                 </div>
               </div>
               <h3>What is another project you've worked on that helped you here?</h3>
-              <p>Another project I've worked on is my senior project, a Peer to Peer search engine called deroute!</p>
+              <p>AOne of my internships required work to be completed in React Native, so the work helped me.</p>
               <div className="team-button">
                 <Link className="btn-transparent" to={"/AboutDaniel"}>More On Daniel &#8594;</Link>
               </div>
@@ -104,14 +104,14 @@ const About = () => {
             <div className="team-card">
               <div className="team-icon-box">
                 <div className="team-icon1">
-                  <i className="material-symbols-outlined">code</i>
+                  <i className="material-symbols-outlined">person</i>
                 </div>
                 <div className="team-icon2">
                   <i className="material-symbols-outlined">code</i>
                 </div>
               </div>
               <h3>What is another project you've worked on that helped you here?</h3>
-              <p>Another project I've worked on is my senior project, a Peer to Peer search engine called deroute!</p>
+              <p>My senior project involves collecting data from users of our system and storing it within SQL.</p>
               <div className="team-button">
                 <Link className="btn-transparent" to={"/AboutCampbell"}>More On Campbell &#8594;</Link>
               </div>
@@ -127,7 +127,7 @@ const About = () => {
                 </div>
               </div>
               <h3>What is another project you've worked on that helped you here?</h3>
-              <p>Another project I've worked on is my senior project, a Peer to Peer search engine called deroute!</p>
+              <p>Another project I worked on that helped me in this project was a website application called “Mitra.”</p>
               <div className="team-button">
                 <Link className="btn-transparent" to={"/AboutDAngelo"}>More On D'Angelo &#8594;</Link>
               </div>
