@@ -12,7 +12,7 @@ const PageNotFound = () => (
             <div class="PageNotFound-text">Page Not Found!</div>
             <br></br>
             <br></br>
-            <Link class="btn-green" to="/">Back to Home</Link>
+            <Link class="btn-green" to="/">Back to home</Link>
         </div>
     </div>
 );

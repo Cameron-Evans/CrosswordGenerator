@@ -81,7 +81,7 @@ function Puzzle() {
       <section className="puzzle">
         <div className="container">
           <div className="puzzle-box">
-            <h2 style={{ textDecorationLine: 'underline'}}>{location.state.query}</h2>
+            <h2 id="puzzleh2" style={{ textDecorationLine: 'underline'}}>{location.state.query}</h2>
 
             <div className="puzzle-size-button-box">
               <h2 className="puzzle-header">Size of puzzle: </h2>

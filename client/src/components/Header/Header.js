@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import fiverrLogo from "../../assets/img/robot.png";
-import cwLogo2 from "../../assets/img/cw-logo-02.png";
+import cwLogo2 from "../../assets/img/cw-logo-01.png";
 import { Link } from "react-router-dom";
 import { googleLogout } from '@react-oauth/google';
 import { useDispatch, useSelector } from "react-redux";
@@ -27,45 +27,45 @@ const Header = () => {
           />
           <input type="checkbox" id="inpNavToggle" />
           <label className="bar__nav-toggle" for="inpNavToggle">
-            <i className="material-icons">menu</i>
+            <i className="material-icons">menu_open</i>
           </label>
           <nav className="nav">
             <a className="nav__link">
               <Link className="nav__link" to={"/"}>
-                Home
+                <span>01.</span> Home
               </Link>
             </a>
-            <a className="nav__link" href="#branding">
-              Daily Puzzle
-            </a>
+            {/* <a className="nav__link" href="#branding">
+            <span>02.</span> Daily Puzzle
+            </a> */}
             <a className="nav__link">
               <Link className="nav__link" to={"/about"}>
-                About
-              </Link>
-            </a>
-            
-            <a className="nav__link">
-              <Link className="nav__link" to={"/share"}>
-                Share
+              <span>02.</span> About
               </Link>
             </a>
             <a className="nav__link">
               <Link className="nav__link" to={"/faq"}>
-                FAQ
+              <span>03.</span> FAQ
+              </Link>
+            </a>
+            <a className="nav__link">
+              <Link className="nav__link" to={"/share"}>
+              <span>04.</span> Share
               </Link>
             </a>
 
-            <a className="nav__link" href="#">
+            {/* <a className="nav__link" href="#">
               Support
-            </a>
+            </a> */}
+            
 
-            <a className="btn-green" href="#contact">
+            <a className="" href="#contact">
             {!localStorage.getItem("authToken") ? (
-                <Link className="nav__link" to={"/login"}>
+                <Link className="btn-green" to={"/login"}>
                   Login
                 </Link>
               ) : (
-                <button onClick={logOut} className="nav__button">Log out</button>
+                <button onClick={logOut} className="btn-green">Log out</button>
               )}
             </a>
           </nav>

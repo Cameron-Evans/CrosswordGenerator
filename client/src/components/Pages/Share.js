@@ -1,5 +1,5 @@
 import React from "react";
-import RobotImg from "../../assets/img/robot.png";
+import RobotImg from "../../assets/img/share-robot.png";
 
 const Share = () => {
   return (
@@ -9,10 +9,8 @@ const Share = () => {
         <div class="container">
           <div class="share-box">
             <div class="share-text">
-              <div class="share-banner">
-                <h4>The Best Crossword Generator</h4>
-              </div>
-              <h2>Share a crossword puzzle with your friends!</h2>
+              <h4>The Best Crossword Generator</h4>
+              <h2>Who doesn't like crosswords? <span>Just share the link.</span></h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur reprehenderit nam quam accusantium nihil culpa.

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import cwLogo2 from "../../assets/img/cw-logo-02.png";
+import cwLogo2 from "../../assets/img/cw-logo-01.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,9 +17,10 @@ const Footer = () => {
               </p>
               <p>Copyright © 2023 Crossword Generator - All rights reserved.</p>
               {/* <!-- Start of Contact Form --> */}
+              <div className="contact-box">
               <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                <div className="contact-item">
+                {/* <div className="contact-item">
                   <h5>Name*</h5>
                   <input
                     type="text"
@@ -28,7 +30,7 @@ const Footer = () => {
                     placeholder="Name"
                     required
                   />
-                </div>
+                </div> */}
                 <div className="contact-item">
                   <h5>Email*</h5>
                   <input
@@ -57,35 +59,37 @@ const Footer = () => {
                   </div>
                 </div>
               </form>
+              </div>
               {/* <!-- End of Contact Form --> */}
             </div>
             <div className="footer-box-links">
               <h3>Site Map</h3>
               <ul>
-                <a href="index.html">
-                  <li>Home</li>
-                </a>
-                <a href="#">
-                  <li>Daily Puzzle</li>
-                </a>
-                <a href="#">
-                  <li>Generated Crosswords</li>
-                </a>
-                <a href="#">
-                  <li>Stats</li>
-                </a>
-                <a href="about.html">
-                  <li>About</li>
-                </a>
-                <a href="share.html">
-                  <li>Share</li>
-                </a>
-                <a href="#">
-                  <li>Support</li>
-                </a>
-                <a href="#">
-                  <li>Login</li>
-                </a>
+              <a href="#">
+                <li>
+                <Link to="/">Home</Link>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                <Link to="/About">About</Link>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                <Link to="/FAQ">FAQ</Link>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                <Link to="/Share">Share</Link>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                <Link to="/Login">Login</Link>
+                </li>
+              </a>
               </ul>
             </div>
             <div className="footer-box-socials">
@@ -109,22 +113,34 @@ const Footer = () => {
             <div className="footer-box-development">
               <h3>Contact Us</h3>
               <a href="#">
-                <li>Cameron Evans</li>
+                <li>
+                <Link to="/AboutCameron">Cameron Evans</Link>
+                </li>
               </a>
               <a href="#">
-                <li>Phil Steinke</li>
+                <li>
+                <Link to="/AbouPhil">Phil Steinke</Link>
+                </li>
               </a>
               <a href="#">
-                <li>Ethan Haeck</li>
+                <li>
+                <Link to="/AboutEthan">Ethan Haeck</Link>
+                </li>
               </a>
               <a href="#">
-                <li>Daniel Ho</li>
+                <li>
+                <Link to="/AboutDaniel">Daniel Ho</Link>
+                </li>
               </a>
               <a href="#">
-                <li>Campbell Lewis</li>
+                <li>
+                <Link to="/AboutCampbell">Campbell Lewis</Link>
+                </li>
               </a>
               <a href="#">
-                <li>D'Angelo Minnis</li>
+                <li>
+                <Link to="/AboutDAngelo">D'Angelo Minnis</Link>
+                </li>
               </a>
             </div>
           </div>

@@ -1,27 +1,19 @@
 import React from "react";
-import RobotImg from "../../assets/img/robot.png";
+import RobotImg from "../../assets/img/dlo-robot.png";
 
 const AboutDAngelo = () => {
   return (
     <>
-      {/* AboutMember Section  */}
-      <section class="aboutMember">
-        <div class="container">
-          
-          <div class="aboutMember-box">
-            <h1>About</h1>
-            
-            <h2>D'Angelo Minnis</h2>
-            
-            <h3>What is another project you've worked on that helped you here?</h3>
-            <p>
-              Generic fluff answer number 1
-            </p>
-            <h3>What do you hope to take away from this project?</h3>
-            <p>
-              Generic fluff answer number 2:
-            </p>
-            <div class="aboutMember-box-image">
+
+      {/* About Section  */}
+      <section className="about">
+        <div className="container">
+          <div className="about-box">
+            <h4 id="personh4">D'Angelo Minnis</h4>
+            <h2 id="personh2">What is another project you've worked on that helped you here?<span> What do you hope to take away from this project?</span></h2>
+            <p>Another project I worked on that helped me in this project was a learning platform website application called “Mitra”, which is also a React app that I helped design and develop the front-end of.</p>
+            <p>From our crossword generator project, I believe I developed good teamwork skills through working on specific parts of the project, that were then pushed to GitHub where then the rest of the team members developed on top of.</p>
+            <div class="person-image">
                     <img
                     src={RobotImg}
                     alt=""
@@ -30,6 +22,7 @@ const AboutDAngelo = () => {
           </div>
         </div>
       </section>
+
       </>
   );
 }; 

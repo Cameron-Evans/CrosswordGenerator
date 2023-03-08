@@ -3,7 +3,7 @@ import React from "react";
 class ClueList extends React.Component {
     render() {
         return (
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'left'}}>
+            <div className="across-down-box">
                 <h4>Across</h4>
                 {
                     this.props.clue_data?.map((data_element) => {
@@ -15,7 +15,7 @@ class ClueList extends React.Component {
                         })
                     })
                 }
-                <h4> Down</h4>
+                <h4 style={{marginTop:'2rem'}}> Down</h4>
                 {
                     this.props.clue_data?.map((data_element) => {
                         return this.props.clue_list?.map((clue_element) => {
