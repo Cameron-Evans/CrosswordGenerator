@@ -18,7 +18,7 @@ const About = () => {
               Why can't crossword puzzles be automatically generated?
             </p>
             <div className="about-button">
-            <Link class="btn-green" to="/">Make a crossword</Link>
+            <Link title="MakeButton" class="btn-green" to="/">Make a crossword</Link>
             </div>
             
             {/* <div className="about-button">
