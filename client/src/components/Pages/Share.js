@@ -12,8 +12,7 @@ const Share = () => {
               <h4>The Best Crossword Generator</h4>
               <h2>Who doesn't like crosswords? <span>Just share the link.</span></h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur reprehenderit nam quam accusantium nihil culpa.
+                Click the button below to copy the link to your clipboard.
               </p>
               <div class="share-form">
                 <form name="share" method="POST" data-netlify="true">
