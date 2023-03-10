@@ -1,7 +1,6 @@
 import {fireEvent, render, screen } from '@testing-library/react';
 import Home from '../Pages/Home';
 import { BrowserRouter } from 'react-router-dom';
-import {UserEvent} from '@testing-library/user-event';
 
 describe('Home', () => {
     test("Render correctly", () =>{
@@ -19,5 +18,19 @@ describe('Home', () => {
 
         expect(createButton).toBeInTheDocument();
         expect(createButton).toHaveAttribute("type", "submit");
+    })
+
+    test("Keyword input changes with on changed event", () =>{
+        render(
+            <BrowserRouter>
+                <Home/>
+            </BrowserRouter>
+        )
+
+        const keywordField = screen.getByPlaceholderText(/Enter a keyword/i);
+
+        const keywordTest = "dogs";
+
+        fireEvent.change(keywordField, {target: {value:keywordTest}})
     })
 });
