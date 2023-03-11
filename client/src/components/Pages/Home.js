@@ -8,13 +8,22 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
   const navigate = useNavigate();
+  async function getData(keywords) {
+    var finalData = [];
+    for (const keyword of keywords) {
+      const data = await fetch(`http://crosswordcreate.xyz:52093/GenCrossword/${keyword}`)
+      .then(res => res.json());
+      finalData = finalData.concat(data);
+    }
+    return(finalData)
+  }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
   event.preventDefault()
   const keyword = event.target.keyword.value
-  fetch(`http://crosswordcreate.xyz:52093/GenCrossword/${keyword}`)
-    .then(res => res.json())
-    .then(array => 
+  const keywords = keyword.split(" ");
+  getData(keywords)
+    .then(array =>
       navigate('/puzzle', {
         state: {
           query: keyword,
