@@ -34,6 +34,18 @@ function Puzzle() {
     )
   }
 
+  //trim json from server of duplicates
+  let trimmed_list = []
+  let seen = {}
+  location.state.results.forEach(element => {
+    if(seen[element.word]){
+      //do nothing
+    }else{
+      seen[element.word] = true
+      trimmed_list.push(element)
+    }
+  });
+  location.state.results = JSON.parse(JSON.stringify(trimmed_list))
 
   const word_list = location.state.results.map((element) => {
     return element.word
