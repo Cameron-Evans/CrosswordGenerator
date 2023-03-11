@@ -207,6 +207,11 @@ export function generateCrossword(MAX_SIZE, word_list) {
         // dir = 0 is horrizontal, dir = 1 is vertical, 
         // index = index that it is being added to ('WALTZ' being added to 'SHOWER' would be 3)
         function placeWord(A, word, index, x, y, dir) {
+            clue_data.forEach((element, ind)=>{
+                if((element.x === x) && (element.y === y) && (element.dir === dir)){
+                    clue_data.splice(ind, 1)
+                }
+            })
             clue_data.push({ word, x, y, dir })
 
             for (let i = 0; i < word.length; i++) {
