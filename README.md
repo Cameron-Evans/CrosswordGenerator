@@ -1,4 +1,4 @@
-# CrossWord Generator
+# Crossword Generator
 
 ## Hosted on http://crosswordcreate.xyz/
 
