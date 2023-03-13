@@ -2,6 +2,40 @@ import React from "react";
 import RobotImg from "../../assets/img/robot.png";
 import { Link } from "react-router-dom";
 
+export const Cameron = {
+  name: "Cameron Evans",
+  answer1: "Another project I've worked on is my senior project, a Peer to Peer search engine called deroute! As far as we know, it's the first fully distributed peer to peer search engine out there. It also uses the fastText library so many of the same problems with CrosswordGen popped up with that project.",
+  answer2: "I'm hoping this project gives me a nice resume piece and something neat I can show my grandma."
+}
+
+export const Campbell = {
+  name: "Campbell Lewis",
+  answer1: "My senior project involves collecting data from users of our system and storing it within an SQL database, so the practice I gained from that helped me to interact with the MongoDB database on this project. Aside from that I am completely new to web development, so it was a learning experience from me.",
+  answer2: "As I mentioned I am new to web development, so this project is valuable experience, as well as a rare project that is actually something I can publicly show off. This was also, in terms of members, the largest group project I have been a part of, so I'm gaining some experience learning what the workflow is like shared among this many people."
+}
+export const DAngelo = {
+  name: "D'Angelo Minnis",
+  answer1: "Another project I worked on that helped me in this project was a learning platform website application called “Mitra”, which is also a React app that I helped design and develop the front-end of.",
+  answer2: "From our crossword generator project, I believe I developed good teamwork skills through working on specific parts of the project, that were then pushed to GitHub where then the rest of the team members developed on top of."
+}
+
+export const Daniel = {
+  name: "Daniel Ho",
+  answer1: "One of my internships required work to be completed in React Native, so the work I did there really helped me hit the ground running faster.",
+  answer2: "I was hoping to be able to increase my experience with react and create another resume stuffer."
+}
+
+export const Ethan = {
+  name: "Ethan Haeck",
+  answer1: "Besides basic web design, I've never used React before so this is my first experience with non-static web apps.",
+  answer2: "A nice resume item and a game to play when I'm bored."
+}
+
+export const Phil = {
+  name: "Phil Steinke",
+  answer1: "In my free time I like to do game development and I have found that parts of that carry over to this project; like creating interactable components that can be reused and the general parent child structure that you build out pages with.",
+  answer2: "I'm completely new to web design, so I went in to this project hoping to strengthen my understanding of the core design and implementation techniques for creating websites and web applications."
+}
 
 const About = () => {
   return (
@@ -20,14 +54,6 @@ const About = () => {
             <div className="about-button">
             <Link title="MakeButton" class="btn-green" to="/">Make a crossword</Link>
             </div>
-            
-            {/* <div className="about-button">
-              <a className="btn-green">
-                <Link className="btn-green" to={"/Home"}>
-                  Make a crossword
-                </Link>
-              </a>
-            </div> */}
           </div>
         </div>
       </section>
