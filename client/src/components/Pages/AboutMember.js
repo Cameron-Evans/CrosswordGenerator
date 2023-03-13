@@ -1,5 +1,4 @@
 import React from "react";
-import RobotImg from "../../assets/img/campbell-robot.png";
 
 const AboutMember = (props) => {
   return (
@@ -15,7 +14,7 @@ const AboutMember = (props) => {
             <p>{props.member.answer2}</p>
             <div class="person-image">
                     <img
-                    src={RobotImg}
+                    src={props.member.robot}
                     alt=""
                     />
             </div>
